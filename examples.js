@@ -76,3 +76,48 @@ console.log(factorial(number));
 let celsius = 5;
 let fahrenheit = (celsius * 1.8) + 32;
 console.log(fahrenheit);
+
+//program to check whether the given number is prime or not
+let number = 6;
+let isprime=true;
+if(number<2){
+    isprime=false;
+    
+    
+}else{
+    for(let i=2;i<=number/2;i++){
+        
+        if(number%i==0){
+            isprime=false;
+            break;
+        }
+    }
+    if(isprime){
+        console.log("prime number");
+    }else{
+        console.log("not a prime number");
+    }
+}
+
+//program to print the prime numbers between the given interval
+let first_number=2;
+let second_number=20;
+let isprime=true;
+for(let i=first_number;i<=second_number;i++){
+    isprime=true;
+    for(let j=2;j<=i/2;j++){
+        if(i%j==0){
+            isprime=false;
+            break;
+        }
+    }
+    if(isprime){
+        console.log(i);
+    }
+}
+
+
+
+
+
+
