@@ -1,13 +1,3 @@
-//program to find the factorial of a given number.
-function factorial(num){
-    if(num<2){
-        return num;
-    }else{
-        return num*factorial(num-1);
-    }
-};
-let number = 5;
-console.log(factorial(number));
 
 //program to find the factorial of a number using for loop
 let number = 5;
@@ -71,3 +61,18 @@ console.log(`the lcm of ${first_number} and ${second_number} is ${lcm}`);
 
 
 
+//program to find the factorial of a given number.
+function factorial(num){
+    if(num<2){
+        return num;
+    }else{
+        return num*factorial(num-1);
+    }
+};
+let number = 5;
+console.log(factorial(number));
+
+//program to convert celsius into fahrenheit
+let celsius = 5;
+let fahrenheit = (celsius * 1.8) + 32;
+console.log(fahrenheit);
